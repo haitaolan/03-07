@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=750, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+				width: 100%;
+				font-family: "微软雅黑";
+			}
+		html,body	,h1,h2,h3,h4,h5,h6,p, a,ul,li,ol,dl,dt,,dd,span,button,input,form{margin: 0; padding: 0;}
+			.public-header {
+				height: 1.86rem;
+				width: 100vw;
+				text-align: center;
+				border-bottom: 2px solid #07CA61;
+				position: relative;
+				line-height: 1.82rem;
+				font-size: 0.76rem;
+				color: #333;
+			}
+			
+			.public-header button {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 1.24rem;
+				height: 1.86rem;
+				background: url('img/icon-back.png') no-repeat center;
+			}
+			
+			.error-tips {
+				height: 1.98rem;
+				width: 100vw;
+				background: #f88266;
+				box-sizing: border-box;
+				color: #fff;
+				font-size: 0.52rem;
+				line-height: 0.72rem;
+				text-align: center;
+				padding: 0.4rem 0.6rem 0;
+				outline-color: #fff;
+			}
+			.cancel-form-title{
+				border-bottom:1px  solid #CCCCCC;
+				text-align: center;
+				padding: 1rem 0 ;
+			}
+			.cancel-form-title h2{
+				font-size: 0.72rem;
+				line-height: 0.72rem;
+				color: #333;
+				margin-bottom: 0.4rem;
+			}
+			.cancel-form-title h4{
+				font-size:0.56rem ;
+				line-height: 0.56rem;
+				color: #07CA61;
+			}
+			
+			.radio-group{
+				padding: 0 0.4rem;
+				
+			}
+			.radio-group label{
+				display: flex;
+				height: 1.98rem;
+				line-height: 1.98rem;
+				border-bottom: 1px solid #dadada;
+				box-sizing: border-box;
+				justify-content: space-between;
+				align-items: ; center;
+			}
+			.radio-group p{
+				font-size: 0.64rem;
+				color: #333;
+			}
+			.radio-group div span{
+				display: block;
+				width: 0.8rem;
+				height: 0.8rem;
+				border: 1px solid #dadada;
+				border-radius: 50%;
+			}
+			.radio-group div input:checked + span{
+				background: url('') no-repeat center;
+				border-color: transparent;
+			}
+			.reason-submit{
+				display: block;
+				width: calc(100vw - 0.8rem);
+				height: 1.92rem;
+				line-height: 1.92rem;
+				background: #07CA61;
+				color: #fff;
+				text-align: center;
+				border-radius: 4px;
+				font-size: 0.64rem;
+				margin: 1.6rem auto 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="public-header">
+			<button class="back-button"></button> 取消订单
+		</header>
+		<p class="error-tips">偌大个日订单取消达到3次，账户将被冻结1天，请谨慎取消！ 您当日已取消2次
+		</p>
+		<form>
+			<div class=" cancel-form-title">
+				<h2>请您真实告诉我们取消原因</h2>
+			<h4>我们会努力为您提供更好的服务</h4>
+			</div>
+			
+			<div class="radio-group">
+				<label for="aa">
+						<p> 司机离我太远了</p>
+						<div>
+							<input type="radio" name="reason" hidden value = "1" id="aa"/>
+							<span></span>
+						</div>
+					</label>
+				<label for="bb">
+						<p> 下错单</p>
+						<div>
+							<input type="radio" name="reason" hidden value = "1" id="bb"/>
+							<span></span>
+						</div>
+					</label>
+				<label for="cc">
+						<p> 暂时不需要车</p>
+						<div>
+							<input type="radio" name="reason" hidden value = "1" id="cc"/>
+							<span></span>
+						</div>
+					</label>
+				<label for="dd">
+						<p> 司机让我退单</p>
+						<div>
+							<input type="radio" name="reason" hidden value = "1" id="dd"/>
+							<span></span>
+						</div>
+					</label>
+
+			</div>
+			<button class="reason-submit">提交</button>
+		</form>
+	</body>
+
+</html>
